@@ -1,0 +1,128 @@
+/* Banner */
+.section-intro {
+    position: relative;
+    text-align: center;
+    padding: 250px 0 80px;
+}
+.section-intro .container {
+    position: relative;
+    z-index: 9;
+}
+.section-intro h1 {
+    line-height: 1.1;
+}
+.section-intro .sub-title {
+    line-height: 36px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.section-promotion {
+    padding-bottom: 70px;
+}
+.banner-promotion {
+    background-color: #f2f2f2;
+    margin-bottom: 70px;
+    position: relative;
+}
+.banner-promotion .bg-img {
+    position: relative;
+    text-align: center;
+    width: 62%;
+    height: 470px;
+}
+.banner-promotion .bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-promotion .detail {
+    width: 38%;
+    padding: 40px 60px 40px 50px;
+}
+.banner-promotion .detail h2 {
+    line-height: 1;
+}
+.banner-promotion.promotion-1 .bg-img {
+    background-image: url(../images/promo_1.jpg);
+}
+.banner-promotion.promotion-2 .bg-img {
+    background-image: url(../images/promo_2.jpg);
+}
+.banner-promotion .detail p {
+    line-height: 24px;
+    margin-top: 20px;
+}
+.banner-promotion .detail .booking-link {
+    position: absolute;
+    bottom: 35px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-intro {
+        padding: 220px 0 60px;
+    }
+    .banner-promotion .detail h2 {
+        line-height: 1.1;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-intro {
+        padding: 180px 0 40px;
+    }
+    .section-promotion {
+        padding-bottom: 40px;
+    }
+
+    .banner-promotion {
+        margin-bottom: 60px;
+    }
+    .banner-promotion .detail h2 {
+        line-height: 1.1;
+        margin-bottom: 5px !important;
+    }
+    .banner-promotion > div {
+        display: block !important;
+    }
+    .banner-promotion .bg-img {
+        width: auto;
+        height: auto;
+    }
+    .banner-promotion .bg-img img {
+        width: 100%;
+        height: auto;
+    }
+    .banner-promotion .detail {
+        width: 100%;
+        padding: 40px 60px 60px 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-intro {
+        padding: 150px 0 0;
+    }
+    .section-intro .sub-title {
+        line-height: 30px;
+    }
+
+    .section-promotion {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .banner-promotion {
+        margin-bottom: 40px;
+    }
+    .banner-promotion .detail {
+        padding: 30px;
+        text-align: center !important;
+    }
+    .banner-promotion .detail .booking-link {
+        position: relative;
+        bottom: 0;
+    }
+}

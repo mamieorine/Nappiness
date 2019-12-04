@@ -1,0 +1,300 @@
+/* Banner */
+.section-intro {
+    position: relative;
+    text-align: center;
+    padding: 250px 0 90px;
+}
+.section-intro .container {
+    position: relative;
+    z-index: 9;
+}
+.section-intro h1 {
+    line-height: 1.1;
+    margin-bottom: 45px;
+}
+.section-intro .sub-title {
+    line-height: 36px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.section-rooms {
+    padding: 0 0 140px;    
+    z-index: 99;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 100%);
+    position: relative;
+    z-index: 9;
+}
+
+
+/* Responsive */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .section-rooms h1 {
+        line-height: 90px;
+        margin-bottom: 90px;
+    }
+    .section-rooms .room-3 .marble {
+        left: 0;
+        top: -100px;
+    }
+    .section-rooms .room-6 .room-image img {
+        margin-top: 60px;
+    }
+    .section-rooms .room-6 .room-detail > div {
+        width: 350px;
+        margin-right: 0;
+    }
+    .section-rooms .room-6 .room-detail > div::before {
+        right: -150px;
+        width: 500px;
+    }
+    .section-rooms .room-7 {
+        margin-top: -60px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-intro {
+        padding: 220px 0 0;
+    }
+    
+    /* Section Rooms */
+    .section-rooms {
+        padding: 0 0 70px;
+    }
+    .section-rooms h1 {
+        line-height: 85px;
+        margin-bottom: 80px;
+    }
+    .section-rooms .room-1 .room-image img {
+        height: 500px;
+    }
+    .section-rooms .room-2 .room-image img {
+        height: 520px;
+        margin-top: -100px;
+    }
+    .section-rooms .room-2 .room-detail > div {
+        margin-top: 60px;
+    }
+    .section-rooms .room-3 .marble {
+        left: 0;
+        top: -80px;
+        height: 520px;
+    }
+    .section-rooms .room-4 {
+        margin-bottom: 40px;
+    }
+    .section-rooms .room-4 .room-detail > div {
+        margin-top: 40px;
+    }
+    .section-rooms .room-4 .room-image img {
+        height: 480px;
+    }
+    .section-rooms .room-6 .room-image img {
+        margin-top: 60px;
+    }
+    .section-rooms .room-6 .marble {
+        width: 300px;
+        right: 0;
+        bottom: 0px;
+    }
+    .section-rooms .room-6 .room-detail > div {
+        width: 350px;
+        margin-right: 0;
+    }
+    .section-rooms .room-6 .room-detail > div::before {
+        right: -150px;
+        width: 500px;
+    }
+    .section-rooms .room-7 {
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-intro {
+        padding: 180px 0 0;
+    }
+
+    .section-rooms {
+        padding: 0;
+    }
+    .section-rooms h1 {
+        line-height: 1.3;
+        margin-bottom: 60px;
+    }
+    .section-rooms .container {
+        margin-top: 0;
+    }
+    .section-rooms .marble {
+        display: none !important;
+    }
+    .section-rooms .room-detail {
+        padding-top: 50px;
+        padding-left: 60px;
+    }
+    .section-rooms .room-detail > div::before {
+        top: -25px;
+    }
+    .section-rooms .room-1 .room-image img {
+        height: 420px;
+    }
+    .section-rooms .room-2 {
+        margin-bottom: 40px;
+    }
+    .section-rooms .room-2 .room-image img {
+        height: 400px;
+        margin-top: -40px;
+    }
+    .section-rooms .room-2 .room-detail > div {
+        margin-top: 60px;
+    }
+    .section-rooms .room-3 .room-image img {
+        height: 420px;
+    }
+    .section-rooms .room-4 {
+        margin-bottom: 40px;
+    }
+    .section-rooms .room-4 .room-detail > div {
+        margin-top: 40px;
+    }
+    .section-rooms .room-4 .room-image img,
+    .section-rooms .room-5 .room-image img {
+        height: 400px;
+    }
+
+    .section-rooms .room-6 .room-detail,
+    .section-rooms .room-6 .room-image img {
+        padding-top: 0;
+    }
+    .section-rooms .room-6 .room-detail > div {
+        width: 350px;
+        margin-right: 0;
+    }
+    .section-rooms .room-6 .room-detail > div::before {
+        right: -150px;
+        width: 500px;
+    }
+    .section-rooms .room-7 {
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-intro {
+        padding: 150px 0 0;
+    }
+    .section-intro h1 {
+        margin-bottom: 10px;
+    }
+    .section-intro .sub-title {
+        line-height: 30px;
+    }
+
+    .section-rooms {
+        padding: 40px 0;
+    }
+    .section-rooms h1 {
+        margin-bottom: 30px;
+    }
+    .section-rooms .container {
+        padding: 0 30px;
+    }
+    .section-rooms .row {
+        display: block;
+    }
+    .section-rooms .room-detail,
+    .section-rooms .room-image {
+        width: 100% !important ;
+        max-width: 100% !important;
+    }
+    .section-rooms .room-detail {
+        padding: 20px 15px !important;
+    }
+    
+    .section-rooms .room-detail > div::before {
+        display: none;
+    }
+    .section-rooms .room-image img {
+        height: 280px !important;
+        width: 100% !important;
+        object-fit: cover;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    .section-rooms .room-detail > div .font-40 {
+        font-size: 26px;
+    }
+    .section-rooms .room-detail > div {
+        position: relative;
+        width: 100% !important;
+        font-size: 14px;
+        float: none !important;
+    }
+    .section-rooms .room-detail ul {
+        margin-bottom: 25px;
+    }
+    .section-rooms .room-detail a.color-primary {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .section-rooms .room-2 .room-image {
+        padding-left: 15px;
+    }
+    .section-rooms .room-3,
+    .section-rooms .room-2,
+    .section-rooms .room-4 {
+        margin-bottom: 0;
+    }
+    .section-rooms .room-2 .room-detail > div,
+    .section-rooms .room-4 .room-detail > div {
+        margin-top: 0;
+    }
+    .section-rooms .room-3 .room-image {
+        padding-right: 15px;
+    }
+    .section-rooms .room-6 .room-detail > div {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .section-rooms .room-7 {
+        margin-top: 0;
+    }
+
+    .section-category {
+        padding: 0;
+    }
+    .section-category .container {
+        padding: 0;
+    }
+    .section-category .row {
+        display: block;
+    }
+
+    section.section-instagram {
+        padding: 60px 0 0;
+    }
+    .section-instagram h1 {
+        margin-bottom: 25px;
+    }
+
+    .section-contact div#map {
+        height: 380px;
+    }
+
+    .section-contact .container {
+        padding: 0 30px;
+    }
+    .section-contact .contact-box {
+        margin-top: 35px;
+        width: 100%;
+        font-size: 24px;
+    }
+    .section-contact .font-40 {
+        font-size: 24px;
+        margin-bottom: 10px !important;
+    }
+}
