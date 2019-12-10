@@ -264,7 +264,7 @@ section.section-contact-form {
 
 @media (max-width: 767px) {
     .section-intro {
-        padding: 150px 0 0;
+        padding: 120px 0 0;
     }
     .section-intro h1 {
         margin-bottom: 0;
@@ -273,6 +273,10 @@ section.section-contact-form {
         line-height: 30px;
     }
 
+    .section-map div#map canvas {
+        height: 100px !important;
+        object-fit: scale-down;
+    }
     .section-contact {
         padding: 40px 0 20px;
     }

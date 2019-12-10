@@ -68,8 +68,8 @@
 }
 
 .curve-wrap {
-    -webkit-mask-image: url('../images/curve-mask.png');
-    mask-image: url('../images/curve-mask.png');
+    -webkit-mask-image: url(../images/curve-mask.png);
+    mask-image: url(../images/curve-mask.png);
     -webkit-mask-position: top center;
     mask-position: top center;
     -webkit-mask-size: cover;
@@ -207,6 +207,7 @@
     width: 420px;
     text-align: center;
     line-height: 1.35;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Section Instagram */
@@ -221,6 +222,46 @@
 }
 .section-instagram #curator-feed {
     margin-top: 70px;
+}
+.section-instagram .crt-post {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #e4e4e4;
+    border-radius: 5px;
+}
+.section-instagram .crt-image-c.crt-image-responsive,
+.section-instagram .crt-image-c.crt-image-responsive img,
+.section-instagram .crt-play {
+    max-height: 240px;
+    height: 240px;
+    padding-bottom: 0 !important;
+    object-fit: cover;
+}
+.section-instagram .crt-post .crt-post-text {
+    font-size: 16px;
+    min-height: 95px;
+    line-height: 1.4;
+}
+.section-instagram .crt-post .crt-post-text  br + br,
+.section-instagram .crt-post .crt-social-icon {
+    display: none;
+}
+.section-instagram .crt-widget-carousel .crt-carousel-stage {
+    overflow: visible;
+}
+.section-instagram .crt-post-footer .crt-post-date a {
+    font-size: 14px !important;
+}
+.section-instagram .crt-post .crt-post-fullname > a {
+    color: #ffa600;
+    font-family: 'MuseoSansRounded500';
+}
+.section-instagram .crt-post .crt-post-footer .crt-post-share a {
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+}
+.section-instagram .crt-post .crt-post-footer .crt-post-share a:hover {
+    color: #ffa600;
 }
 
 /* Section Contact */
@@ -417,7 +458,6 @@
     header .main-nav {
         display: none;
     }
-
     .home-banner {
         height: 640px;
     }
@@ -447,7 +487,7 @@
         width: 480px;
     }
     .curve-wrap .img-floating.img-1 {
-        top: 220px;
+        top: 150px;
         height: 200px;
         bottom: auto;
         left: -80px;
@@ -470,7 +510,10 @@
         height: 50px;
     }
 
-
+    .section-contact div#map canvas {
+        height: 100px !important;
+        object-fit: scale-down;
+    }
     .section-rooms {
         margin-top: 0;
         padding: 0;
@@ -607,6 +650,11 @@
         padding-right: 30px;
     }
 
+    .section-contact div#map canvas {
+        height: 70px !important;
+        object-fit: scale-down;
+    }
+
     .home-banner {
         height: 400px;
     }
@@ -655,7 +703,7 @@
         min-height: auto;
     }
     .home-intro .container {
-        padding: 60px 0 200px;
+        padding: 60px 0 240px;
     }
     .home-intro .container h2 {
         width: 100%;
@@ -668,21 +716,25 @@
     .home-intro h2 span img {
         height: 45px;
     }
+    .home-intro .img-floating.bg-rellax {
+        transform: none !important;
+    }
     .home-intro .img-floating.img-1 {
         height: 120px;
         left: -20px;
         bottom: 70px;
+        top: auto;
     }
     .home-intro .img-floating.img-2 {
-        bottom: 0;
-        height: 145px;
-        right: 20%;
+        bottom: -10px;
+        height: 155px;
+        right: 22%;
         top: auto;
     }
     .home-intro .img-floating.img-3 {
         bottom: 100px;
         height: 110px;
-        right: -20px;
+        right: -25px;
         top: auto;
     }
 

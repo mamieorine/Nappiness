@@ -20,7 +20,10 @@
 /* Contact */
 .section-intro-image {
     position: relative;
-    padding-bottom: 70px;
+    padding: 0 0 140px;    
+    z-index: 99;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 100%);
 }
 .section-intro-image .row {
     position: relative;
@@ -216,7 +219,7 @@
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
 }
-.section-menu ul.nav > li.active a,
+.section-menu ul.nav > li a.active,
 .section-menu ul.nav > li a:hover {
     color: #000;
     border-bottom: 2px solid #ffa600;
@@ -388,7 +391,7 @@
 
 @media (max-width: 767px) {
     .section-intro {
-        padding: 150px 0 0;
+        padding: 120px 0 0;
     }
     .section-intro h1 {
         margin-bottom: 0;

@@ -35,14 +35,14 @@
     <!-- Mobile Menu -->
     <nav class="navbar mobilenav">
         <ul class="navbar-nav mr-auto">
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/room-types.html">Room types</a></li>
-            <li><a href="/facilities.html">Facility</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/food-and-cafe.html">Restaurant</a></li>
-            <li><a href="/promotion.html">Promotion</a></li>
-            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./room-types.html">Room types</a></li>
+            <li><a href="./facilities.html">Facility</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./food-and-cafe.html">Restaurant</a></li>
+            <li><a href="./promotion.html">Promotion</a></li>
+            <li><a href="./contact-us.html">Contact</a></li>
         </ul>
 
         <div class="social-media">
@@ -57,15 +57,15 @@
     <!-- Desktop Menu -->
     <div class="main-nav">
         <ul class="d-flex">
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/room-types.html">Room types</a></li>
-            <li><a href="/facilities.html">Facility</a></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./room-types.html">Room types</a></li>
+            <li><a href="./facilities.html">Facility</a></li>
             <li class="logo"><a href="/"><img src="./images/logo_white.png" alt="logo"></a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/food-and-cafe.html">Restaurant</a></li>
-            <li><a href="/promotion.html">Promotion</a></li>
-            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./food-and-cafe.html">Restaurant</a></li>
+            <li><a href="./promotion.html">Promotion</a></li>
+            <li><a href="./contact-us.html">Contact</a></li>
         </ul>  
     </div>
     <a href="" class="btn btn-primary btn-header white">Book Now</a>
@@ -73,7 +73,7 @@
 
 <main class="innerpage">
     <section class="section-intro">
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
             <h1 class="font-150 font-northwell color-primary">Food and Cafe</h1>
             <h2 class="sub-title font-24 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h2>
         </div>
@@ -97,6 +97,7 @@
         <div class="container">
             <h1 class="font-80 text-center"><span class="color-primary">Special </span>dishes</h1>
 
+            <div class="marble marble-1 bg-rellax rellax-4"></div>
             <div class="row food-1">
                 <div class="col-6 food-image text-right"><img src="./images/food1.png" class="img-fluid" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 food-detail">
@@ -107,7 +108,6 @@
                     </div>
                 </div>
             </div>
-            <div class="marble marble-1 bg-rellax rellax-4"></div>
             <div class="row food-2">
                 <div class="col-6 food-image"><img src="./images/food2.png" class="img-fluid" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 food-detail text-right order-first">
@@ -151,13 +151,13 @@
             <div class="row">
                 <div class="col">
                     <!-- tabs -->
-                    <ul class="nav justify-content-end">
-                        <li class="active"><a class="font-20" data-toggle="tab" href="#food">Food</a></li>
-                        <li ><a class="font-20" data-toggle="tab" href="#drink">Drink</a></li>
-                        <li ><a class="font-20" data-toggle="tab" href="#dessert">Dessert</a></li>
+                    <ul class="nav justify-content-end ">
+                        <li><a class="font-20 font-normal active" data-toggle="tab" href="#food">Food</a></li>
+                        <li><a class="font-20 font-normal" data-toggle="tab" href="#drink">Drink</a></li>
+                        <li><a class="font-20 font-normal" data-toggle="tab" href="#dessert">Dessert</a></li>
                     </ul>
 
-                    <div class="tab-content font-18">
+                    <div class="tab-content font-18 font-normal">
                         <div class="tab-pane fade in show active" id="food">
                             <div class="text-uppercase">Lorem ipsum dolor sit amet, <span class="price">125 THB</span></div>
                             <div class="text-uppercase">m ad minim veniam, quis nostrud exercitation <span class="price">125 THB</span></div>
@@ -245,8 +245,5 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/animate.js"></script>
-<script>
-    AOS.init();
-</script>
 </body>
 </html>

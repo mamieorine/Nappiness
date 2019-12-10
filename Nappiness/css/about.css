@@ -17,8 +17,10 @@
 
 /* About */
 .section-about {
-    background-color:transparent;
-    padding: 0 0 140px;
+    padding: 0 0 140px;    
+    z-index: 99;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 100%);
     position: relative;
 }
 .section-about .intro-image,
@@ -162,7 +164,7 @@
 
 @media (max-width: 767px) {
     .section-intro {
-        padding: 150px 0 0;
+        padding: 120px 0 0;
     }
     .section-intro h1 {
         margin-bottom: 0;

@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 	/* Rellax 2 */
 	var rellax = new Rellax('.rellax-2', {
-		speed: -1.5,
+		speed: -0.5,
 		center: false,
 		wrapper: null,
 		round: true,
@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 	/* Rellax 3 */
 	var rellax = new Rellax('.rellax-3', {
-		speed: 1,
+		speed: 0.8,
 		center: false,
 		wrapper: null,
 		round: true,

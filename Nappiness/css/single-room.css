@@ -77,8 +77,8 @@
 }
 
 .curve-wrap {
-    -webkit-mask-image: url('../images/curve-mask.png');
-    mask-image: url('../images/curve-mask.png');
+    -webkit-mask-image: url(../images/curve-mask.png);
+    mask-image: url(../images/curve-mask.png);
     -webkit-mask-position: top center;
     mask-position: top center;
     -webkit-mask-size: cover;
@@ -258,6 +258,46 @@
 .section-instagram #curator-feed {
     margin-top: 70px;
 }
+.section-instagram .crt-post {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #e4e4e4;
+    border-radius: 5px;
+}
+.section-instagram .crt-image-c.crt-image-responsive,
+.section-instagram .crt-image-c.crt-image-responsive img,
+.section-instagram .crt-play {
+    max-height: 240px;
+    height: 240px;
+    padding-bottom: 0 !important;
+    object-fit: cover;
+}
+.section-instagram .crt-post .crt-post-text {
+    font-size: 16px;
+    min-height: 95px;
+    line-height: 1.4;
+}
+.section-instagram .crt-post .crt-post-text  br + br,
+.section-instagram .crt-post .crt-social-icon {
+    display: none;
+}
+.section-instagram .crt-widget-carousel .crt-carousel-stage {
+    overflow: visible;
+}
+.section-instagram .crt-post-footer .crt-post-date a {
+    font-size: 14px !important;
+}
+.section-instagram .crt-post .crt-post-fullname > a {
+    color: #ffa600;
+    font-family: 'MuseoSansRounded500';
+}
+.section-instagram .crt-post .crt-post-footer .crt-post-share a {
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+}
+.section-instagram .crt-post .crt-post-footer .crt-post-share a:hover {
+    color: #ffa600;
+}
 
 /* Section Rooms */
 .section-rooms {
@@ -417,12 +457,24 @@
         padding-top: 160px;
     }
     .single-banner .booking-box {
-        max-width: 720px;
-        padding: 20px 200px 20px 20px;
+        max-width: 600px;
+        padding: 20px 150px 20px 20px;
         text-align: left;
+        font-size: 17px;
+        height: 60px;
     }
-    .single-banner .booking-box input {
-        width: 220px;
+    .single-banner .booking-box .fal {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    .single-banner .booking-box span {
+        margin: 0 5px;
+    }
+    .single-banner .booking-box .btn {
+        width: 140px;
+        font-size: 17px;
+        padding-top: 18px;
+        height: 60px;
     }
 
     .curve-wrap {
@@ -491,7 +543,7 @@
     }
 
     .section-rooms {
-        padding: 70px 0 80px;
+        padding: 70px 0;
     }
     .section-rooms h1 {
         line-height: 110px;
@@ -502,15 +554,19 @@
     .section-rooms .room-6 .room-image img {
         height: 400px;
     }
+    .section-rooms .room-6 .room-image img {
+        margin-bottom: 0;
+    }
     .section-rooms .room-5 .room-detail {
         padding-top: 50px;
         padding-left: 40px;
     }
     .section-rooms .room-6 .marble {
-        width: 300px;
+        width: 200px;
         right: 0;
-        bottom: 0;
-        height: 450px;
+        bottom: -300px;
+        height: 300px;
+    }
     }
     .section-rooms .room-6 .room-image img {
         margin-top: 0;

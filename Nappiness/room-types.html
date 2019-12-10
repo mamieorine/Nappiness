@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/hamburgler.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/hamburgler.css">
+    <link rel="stylesheet" href="css/room-types.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-<header class="d-flex justify-content-between">
+<header class="innerpage d-flex justify-content-between">
     <div class="social-media">
         <ul class="d-flex">
             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -29,19 +30,19 @@
             <div class="menui bottom-menu"></div> 
         </div> 
     </a>
-    <a class="logo-mobile" href=""><img src="./images/logo_dark.png" alt=""></a> 
+    <a class="logo-mobile" href=""><img src="./images/logo_white.png" alt=""></a> 
 
     <!-- Mobile Menu -->
     <nav class="navbar mobilenav">
         <ul class="navbar-nav mr-auto">
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/room-types.html">Room types</a></li>
-            <li><a href="/facilities.html">Facility</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/food-and-cafe.html">Restaurant</a></li>
-            <li><a href="/promotion.html">Promotion</a></li>
-            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./room-types.html">Room types</a></li>
+            <li><a href="./facilities.html">Facility</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./food-and-cafe.html">Restaurant</a></li>
+            <li><a href="./promotion.html">Promotion</a></li>
+            <li><a href="./contact-us.html">Contact</a></li>
         </ul>
 
         <div class="social-media">
@@ -56,66 +57,33 @@
     <!-- Desktop Menu -->
     <div class="main-nav">
         <ul class="d-flex">
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/room-types.html">Room types</a></li>
-            <li><a href="/facilities.html">Facility</a></li>
-            <li class="logo"><a href="/"><img src="./images/logo_dark.png" alt="logo"></a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/food-and-cafe.html">Restaurant</a></li>
-            <li><a href="/promotion.html">Promotion</a></li>
-            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./room-types.html">Room types</a></li>
+            <li><a href="./facilities.html">Facility</a></li>
+            <li class="logo"><a href="/"><img src="./images/logo_white.png" alt="logo"></a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./food-and-cafe.html">Restaurant</a></li>
+            <li><a href="./promotion.html">Promotion</a></li>
+            <li><a href="./contact-us.html">Contact</a></li>
         </ul>  
     </div>
-    <a href="" class="btn btn-primary white btn-header">Book Now</a>
+    <a href="" class="btn btn-primary btn-header white">Book Now</a>
 </header>
 
-<main>
-    <section class="home-banner">
-        <div class="container">
-            <h1 class="font-northwell font-200 color-white">Happiness in <span>Bangkok</span></h1>
-
-            <div class="booking-box">
-                <form action="" class="d-flex justify-content-between align-items-end">
-                    <div>
-                        <label class="font-17">Check in</label>
-                        <input type="date" placeholder="DD/MM/YY">
-                    </div>
-                    <div>
-                        <label class="font-17">Check in</label>
-                        <input type="date" placeholder="DD/MM/YY">
-                    </div>               
-                    <button type="button" class="btn btn-secondary">Check</button>
-                </form>
-            </div>
+<main class="innerpage">
+    <section class="section-intro">
+        <div class="container text-center" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+            <h1 class="font-150 font-northwell color-primary">Room Types</h1>
+            <h2 class="sub-title font-24 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h2>
         </div>
-    </section>
-    
-    <section class="curve-wrap" id="mask">
-    <div class="home-intro">
-        <div class="container">
-            <h2 class="font-48">
-                <span class="color-primary">nappiness hotel </span>is a hotel
-                located in the heart of bangkok surrounded by famous attractions, <br>
-                such as <span class="color-primary"><img src="./images/kaosan.png" class="khaosan"> Khaosan Road</span>      
-                <span class="color-primary"> Golden Mountain <img src="./images/goldenmont.png" class="goldenmont"></span>  <br>               
-                and <span class="color-primary"><img src="./images/palace.png">The Grand Palace</span>
-            </h2>
-            <p class="font-20 mt-5">So basically, you are right in the middle <br> of where everything happens!</p>
-        
-            <img src="./images/temple.jpg" class="bg-rellax rellax img-floating img-1">
-            <img src="./images/tuktuk.jpg" class="bg-rellax rellax-2 img-floating img-2">
-            <img src="./images/fort.jpg" class="bg-rellax rellax-3 img-floating img-3">
-        </div>
-    </div>
     </section>
 
     <section class="section-rooms">
         <div class="container">
-            <h1 class="font-100 text-center">We have <br> <span class="color-primary">7 room types</span></h1>
 
             <div class="row room-1">
-                <div class="col-6 room-image" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><img src="./images/room1.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image"><img src="./images/room1.jpg" class="img-fluid" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail">
                     <div>
                         <h2 class="font-40">Size S twin</h2>
@@ -130,7 +98,7 @@
                 </div>
             </div>
             <div class="row room-2">
-                <div class="col-6 room-image" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><img src="./images/room2.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image"><img src="./images/room2.jpg" class="img-fluid" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail detail-left order-first">
                     <div>
                         <h2 class="font-40">Size S King</h2>
@@ -146,7 +114,7 @@
             </div>
 
             <div class="row room-3">
-                <div class="col-6 room-image text-right" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><div class="marble bg-rellax rellax"></div><img src="./images/room3.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image text-right"><div class="marble bg-rellax rellax-2"></div><img src="./images/room3.jpg" class="img-fluid" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail">
                     <div>
                         <h2 class="font-40">Size M twin</h2>
@@ -162,7 +130,7 @@
                 </div>
             </div>
             <div class="row room-4">
-                <div class="col-6 room-image" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><img src="./images/room4.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image"><img src="./images/room4.jpg" class="img-fluid" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail detail-left order-first">
                     <div>
                         <h2 class="font-40">Size M twin plus</h2>
@@ -180,7 +148,7 @@
             </div>
 
             <div class="row room-5">
-                <div class="col-6 room-image" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><img src="./images/room5.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image"><div class="marble bg-rellax rellax"></div><img src="./images/room5.jpg" class="img-fluid" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail">
                     <div>
                         <h2 class="font-40">Size M king</h2>
@@ -196,7 +164,7 @@
                 </div>
             </div>
             <div class="row room-6">
-                <div class="col-6 room-image" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><div class="marble bg-rellax rellax-2"></div><img src="./images/room6.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image"><div class="marble bg-rellax rellax-3"></div><img src="./images/room6.jpg" class="img-fluid" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail detail-left order-first">
                     <div>
                         <h2 class="font-40">Family Room</h2>
@@ -213,7 +181,7 @@
             </div>
 
             <div class="row room-7">
-                <div class="col-6 room-image" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"><img src="./images/room7.jpg" class="img-fluid"></div>
+                <div class="col-6 room-image"><img src="./images/room7.jpg" class="img-fluid" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic"></div>
                 <div class="col-6 room-detail">
                     <div>
                         <h2 class="font-40">Canal View Room</h2>
@@ -230,52 +198,6 @@
                         <a href="" class="color-primary font-14"><strong>Learn more</strong></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="section-category">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 bg-category bg-restaurant d-flex justify-content-center align-items-center">
-                    <h2 class="font-60 mb-3">Restaurant</h2>
-                    <p class="font-18 mb-4">Our restaurant serves freshly prepared cuisine made with delicious and nutritious ingredients from local areas, and incorporates a hint of home-made cooking of the world.</p>
-                    <a href="" class="color-primary">Learn more</a>
-                </div>
-                <div class="col-12 col-lg-6 bg-category bg-facility d-flex justify-content-center align-items-center">
-                    <h2 class="font-60 mb-3">Facility</h2>
-                    <p class="font-18 mb-4">Our restaurant serves freshly prepared cuisine made with delicious and nutritious ingredients from local areas, and incorporates a hint of home-made cooking of the world.</p>
-                    <a href="" class="color-primary">Learn more</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col bg-category bg-gallery d-flex justify-content-center align-items-center">
-                    <h2 class="font-60 mb-3">Gallery</h2>
-                    <p class="font-18 mb-4">Our restaurant serves freshly prepared cuisine made with delicious and nutritious ingredients from local areas, and incorporates a hint of home-made cooking of the world.</p>
-                    <a href="" class="color-primary">Go to gallery page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-instagram">
-        <div class="container text-center">
-            <h1 class="font-60">Our guests were <br> <span class="color-primary">nappy</span> staying here</h1>
-            <p class="font-18 font-normal">Let them speak by themselves</p>
-
-            <!-- Place <div> tag where you want the feed to appear -->
-            <div id="curator-feed"></div>
-        </div>
-    </section>
-
-    <section class="section-contact">
-        <div class="bg-map"></div>
-        <div id="map"></div>
-        <div class="container">
-            <div class="contact-box">
-                <a class="font-40 d-block mb-3" href=""><i class="fal fa-directions color-primary"></i>Get direction</a>
-                <a class="font-40 d-block mb-3" href=""><i class="fal fa-walking color-primary"></i>How to get here</a>
-                <a class="font-40 d-block mb-3" href=""><i class="fal fa-arrow-circle-down color-primary"></i>Download maps</a>
             </div>
         </div>
     </section>
@@ -323,36 +245,13 @@
     </div>
 </footer>
 
-<div class="modal popup-ads hide fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <img src="./images/promo_1.jpg" alt="promotion">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span class="font-normal" aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    </div>
-</div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>
+<script src="/js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDidv0jAEYPXqjUg0JpFFda1gYI10Fauxg&callback=initMap"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/animate.js"></script>
-<script src="./js/map.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDidv0jAEYPXqjUg0JpFFda1gYI10Fauxg&callback=initMap"></script>
-<script type="text/javascript">
-    /* curator-feed */
-    (function(){
-    var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-    i.src = "https://cdn.curator.io/published/e0e576ea-a73c-4548-adca-3835490c6dcf.js";
-    e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-    })();
-
-</script>
-<script>
-    AOS.init();
-</script>
 </body>
 </html>

@@ -159,6 +159,8 @@ a:focus {
     border-radius: 50%;
     top: -1px;
     left: -20px;
+    -webkit-transition: all .3s linear .01s;
+    transition: all .3s linear .01s;
 }
 .btn-primary.white::before {
     border: 2px solid transparent;
@@ -166,14 +168,20 @@ a:focus {
 .btn-primary.white {
     background: #fff;
     border: 1px solid #fff;
-    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.09);
 }
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
     background-color: #fff;
     color: #000;
+    opacity: 0.9;
     border: 1px solid #ffa600;
+}
+.btn-primary:hover::before,
+.btn-primary:active::before,
+.btn-primary:focus::before {
+    left: -16px;
 }
 
 .btn-primary.white:hover,
@@ -181,6 +189,7 @@ a:focus {
 .btn-primary.white:focus {
     border: 1px solid #ffa600;
     color: #ffa600;
+    opacity: 1;
 }
 
 .btn-secondary {
@@ -257,7 +266,9 @@ header .btn-header {
     position: absolute;
     right: 100px;
     margin-top: -10px;
-    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.09);
+    -webkit-backdrop-filter: blur(6.7px);
+    backdrop-filter: blur(6.7px);
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.09);
 }
 
 header a:hover,
@@ -283,6 +294,9 @@ main.innerpage::before {
     width: 100%;
     top: 0;
     left: 0;
+}
+main section {
+    position: relative;
 }
 
 /* Footer */
@@ -453,7 +467,7 @@ footer .bottom-footer p {
     border-top-left-radius: 50%;
     margin-top: -160px;
     height: 650px;
-    max-width: 700px;
+    max-width: 720px;
     object-fit: cover;
 }
 .section-rooms .room-3 {
@@ -502,6 +516,10 @@ footer .bottom-footer p {
     top: -40px;
     right: 80px;
 }
+.section-rooms .room-5 .marble {
+    left: 0;
+    top: -40px;
+}
 
 .section-rooms .room-6 .room-image img {
     width: 570px;
@@ -512,7 +530,7 @@ footer .bottom-footer p {
 .section-rooms .room-6 .marble {
     width: 400px;
     right: 0;
-    bottom: 70px;
+    bottom: -100px;
 }
 .section-rooms .room-6 .room-detail {
     padding-top: 60px;
@@ -540,7 +558,6 @@ footer .bottom-footer p {
     object-fit: cover;
     float: right;
 }
-
 
 /* Popup Ads */
 #popup.popup-ads .modal-dialog {
@@ -667,23 +684,38 @@ footer .bottom-footer p {
 }
 
 @media (max-width: 991px) {
-    header .main-nav,
-    header > .social-media {
-        display: none;
+    header {
+        padding: 0;
+        background-color: #fff;
+        height: 65px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
     }
     header .logo-mobile {
         display: block;
         margin: auto;
     }
     header .logo-mobile img {
-        height: 80px;
+        height: 52px;
+        margin-top: 0;
     }
     header .btn-header {
-        margin-top: 0;
-        top: 30px;
+        height: 32px;
+        top: 28px;
         right: 15px;
-        padding: 10px 10px 10px 22px;
+        padding: 7px 10px 7px 22px;
         font-size: 12px;
+    }
+    header .btn-header::before {
+        padding-top: 5px;
+        width: 32px;
+        height: 32px;
+    }
+    header .main-nav,
+    header > .social-media {
+        display: none;
     }
 
     /* Footer */
@@ -728,8 +760,30 @@ footer .bottom-footer p {
 }
 
 @media (max-width: 767px) {
+    header {
+        padding: 0;
+        background-color: #fff;
+        height: 56px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
     header .logo-mobile img {
-        height: 70px;
+        height: 46px;
+        margin-top: 0;
+    }
+    header .btn-header {
+        right: 10px;
+        height: 28px;
+        padding: 6px 8px 8px 14px;
+        font-size: 11px;
+        top: 25px;
+    }
+    header .btn-header::before {
+        padding-top: 3px;
+        width: 28px;
+        height: 28px;
     }
 
     main.innerpage::before {
@@ -791,7 +845,7 @@ footer .bottom-footer p {
         font-size: 32px;
     }
     .font-50 {
-        font-size: 30px;
+        font-size: 28px;
     }
     
     .font-48,
@@ -803,5 +857,8 @@ footer .bottom-footer p {
     .font-22,
     .font-20 {
         font-size: 17px;
+    }
+    .font-18 {
+        font-size: 16px;
     }
 }

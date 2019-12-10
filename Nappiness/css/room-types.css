@@ -184,7 +184,7 @@
 
 @media (max-width: 767px) {
     .section-intro {
-        padding: 150px 0 0;
+        padding: 120px 0 0;
     }
     .section-intro h1 {
         margin-bottom: 10px;
@@ -272,13 +272,6 @@
     }
     .section-category .row {
         display: block;
-    }
-
-    section.section-instagram {
-        padding: 60px 0 0;
-    }
-    .section-instagram h1 {
-        margin-bottom: 25px;
     }
 
     .section-contact div#map {
